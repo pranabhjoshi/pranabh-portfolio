@@ -7,7 +7,10 @@ import Projects from "./pages/Projects.jsx";
 import Writing from "./pages/Writing.jsx";
 import Resume from "./pages/Resume.jsx";
 import Layout from "./components/Layout.jsx";
-
+import SeaHere from "./pages/ProjectPages/SeaHere.jsx";
+import ActUp from "./pages/ProjectPages/ActUp.jsx";
+import Ginger from "./pages/ProjectPages/Ginger.jsx";
+import FutureForeignPolicy from "./pages/WritingPages/FutureForeignPolicy.jsx";
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -19,6 +22,10 @@ createRoot(document.getElementById("root")).render(
         <Route path="/projects" element={<Projects />} />
         <Route path="/writing" element={<Writing />} />
         <Route path="/resume" element={<Resume />} />
+        <Route path="/sea-here" element={<SeaHere />} />
+        <Route path="/actup" element={<ActUp />} />
+        <Route path="/ginger" element={<Ginger />} />
+        <Route path="/future-foreign-policy" element={<FutureForeignPolicy />} />
       </Routes>
     </Layout>
   </BrowserRouter>
