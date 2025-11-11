@@ -1,0 +1,78 @@
+/* Make entire section + parent share one tone */
+body,
+#root,
+main,
+.contact-page,
+#contact {
+  background-color: #eaeaea;
+}
+
+/* Contact layout */
+.contact-page {
+  padding: 3rem 1rem;
+  margin: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+.contact-container {
+  background: transparent; /* remove internal box color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.contact-headshot {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.contact-text h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-text p {
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+/* NEW: Button-style link layout */
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-link {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  background: rgba(0, 119, 255, 0.08); /* subtle blue tint */
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  width: fit-content;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(6px);
+}
+
+.contact-link:hover {
+  background: rgba(0, 119, 255, 0.2);
+  transform: translateY(-2px);
+}

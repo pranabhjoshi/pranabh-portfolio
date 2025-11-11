@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 function Header() {
     return (
         <header>
-      <h3 class="city">SEATTLE, WA</h3>
-      <h1 class="name">PRANABH JOSHI</h1>
+      <h3 className="city">SEATTLE, WA</h3>
+      <h1 className="name">PRANABH JOSHI</h1>
       <nav>
         <Link to="/">Home</Link>
         <Link to="/projects">Projects</Link>
