@@ -5,7 +5,7 @@ export default function FutureForeignPolicy() {
   return (
     <div className="project-page">
         <header className="project-header">
-            <Link to="/" className="back-link">← Back to Projects</Link>
+            <Link to="/writing" className="back-link">← Back to Writing</Link>
             <h1>The Future of American Foreign Policy</h1>
             <p className="subtitle">
             A contemporary analysis of how technological power, AI governance, and
@@ -120,7 +120,7 @@ export default function FutureForeignPolicy() {
 
 
       <footer className="project-footer">
-        <Link to="/" className="back-link bottom">← Back to Projects</Link>
+        <Link to="/writing" className="back-link bottom">← Back to Writing</Link>
       </footer>
     </div>
   );

@@ -5,7 +5,7 @@ export default function Contact() {
     <section id="contact" className="contact-page">
       <div className="contact-container">
         <img
-          src="/images/headshot.jpeg"
+          src="/images/headshot2.jpeg"
           alt="Pranabh Joshi Headshot"
           className="contact-headshot"
         />

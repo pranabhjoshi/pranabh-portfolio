@@ -1,5 +1,5 @@
 .project-page {
-  max-width: 900px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 2rem;
   line-height: 1.6;
@@ -55,3 +55,52 @@
   transform: scale(1.03);
 }
 
+.image-placeholder {
+  height: 250px;
+  background: var(--color-bg-alt);
+  border: 2px dashed var(--color-border);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+
+.image-title {
+  text-align: center;
+  font-weight: 600; /* bold but not blocky */
+  color: var(--color-primary, #1e4e8c); /* your brand blue shade */
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+}
+
+.desktop-img {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.feature-strip {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1400px; /* 🔹 gives more breathing room horizontally */
+  margin: 2rem auto 3rem auto;
+  flex-wrap: nowrap; /* keep them side-by-side */
+  overflow-x: auto;  /* allow subtle scroll if they overflow */
+  padding: 0 1rem;
+  scroll-behavior: smooth;
+}
+
+.feature-item {
+  flex: 1 1 33%; /* each gets equal width by default */
+  max-width: 30%;
+  text-align: center;
+}
