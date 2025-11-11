@@ -56,19 +56,25 @@
 }
 
 
-body {
-    display: flex; 
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    background: var(--color-bg);
-    color: var(--color-text);
-    line-height: 1.6;
-    width: 100%;
-    flex-direction: column;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
-  height: 100%; 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+main {
+  flex: 1 0 auto;
+  width: 100%;
 }
 
 header {
@@ -210,20 +216,67 @@ h2 {
 }  
 
 .project-card {
-  text-decoration: none;   /* removes underline */
-  background: var(--color-secondary);
-  color: var(--color-white);
-  flex: 1 1 250px; /* grow, shrink, base width */
-  max-width: 320px; /* optional cap for large screens */
+  text-decoration: none;
+  background: var(--color-white);
+  color: var(--color-primary);
+  flex: 1 1 280px;
+  max-width: 350px;
   border-radius: 12px;
-  padding: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.project-card h3 {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+.project-card p {
+  color: var(--color-text);
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
-  color: var(--color-tertiarys);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-color: var(--color-tertiary);
+}
+
+.project-card:hover h3 {
+  color: var(--color-secondary);
+}
+
+/* Back link styles */
+.back-link {
+  display: inline-block;
+  margin: 1rem 0 2rem;
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.back-link:hover {
+  color: var(--color-primary);
+  background-color: var(--color-bg);
 }
 
 /* Writing Section */
@@ -276,4 +329,6 @@ footer {
   padding: 2rem 0;
   background: var(--color-primary);
   color: var(--color-bg);
+  flex-shrink: 0;
+  margin-top: auto;
 }
