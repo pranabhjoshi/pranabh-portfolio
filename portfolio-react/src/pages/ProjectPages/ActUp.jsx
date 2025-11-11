@@ -54,8 +54,8 @@ export default function ActUp() {
           <h3>Concept & Ideation</h3>
           <p>
             Early concepts explored leaderboards, progress maps, and community
-            feeds. The final design combines these ideas into a
-            <strong> journal-style dashboard</strong> that tracks activity and
+            feeds. The final design combines these ideas into a 
+            <strong>journal-style dashboard</strong> that tracks activity and
             encourages consistency.
           </p>
         </div>

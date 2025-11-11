@@ -15,8 +15,8 @@ export default function SeaHere() {
 
       <section className="project-summary">
         <p>
-          Growing up, I loved shows like <em>The Wild Kratts</em> and
-          <em> Steve Irwin’s The Crocodile Hunter</em>. They made learning about
+          Growing up, I loved shows like <em>The Wild Kratts</em> and 
+          <em>Steve Irwin’s The Crocodile Hunter</em>. They made learning about
           wildlife feel like an adventure. I wanted to recreate that same spark
           for today’s kids, starting close to home. The Seattle Aquarium does an
           incredible job connecting people to Pacific Northwest marine life, so
@@ -50,7 +50,7 @@ export default function SeaHere() {
           <h3>Research & Inspiration</h3>
           <p>
             I observed visitor behavior and reviewed apps like <em>Pokémon Go</em>,
-            <em> Seek by iNaturalist</em>, and <em>National Geographic Kids</em>.
+            <em>Seek by iNaturalist</em>, and <em>National Geographic Kids</em>.
             Quick interviews with aquarium-goers emphasized a need for a visual,
             offline-friendly, and lightweight tool that feels more like
             collecting memories than reading a guidebook.
