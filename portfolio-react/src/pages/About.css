@@ -1,3 +1,7 @@
+.about-page {
+  height: 8vh; 
+}
+
 .about-container {
   display: flex;
   align-items: center;
@@ -13,9 +17,15 @@
   width: 220px;
   height: 220px;
   object-fit: cover;
+
+  /* shift crop UP to show more face */
+
   border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 3px solid black;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
+
+
 
 .about-text {
   flex: 1;

@@ -5,7 +5,7 @@ export default function FutureForeignPolicy() {
   return (
     <div className="project-page">
         <header className="project-header">
-            <Link to="/writing" className="back-link">← Back to Writing</Link>
+            <Link to="git /writing" className="back-link">← Back to Writing</Link>
             <h1>The Future of American Foreign Policy</h1>
             <p className="subtitle">
             A contemporary analysis of how technological power, AI governance, and

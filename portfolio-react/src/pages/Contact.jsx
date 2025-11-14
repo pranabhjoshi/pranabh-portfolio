@@ -2,10 +2,10 @@ import "./Contact.css";
 
 export default function Contact() {
   return (
-    <section id="contact" className="contact-page">
+    <section id="contact-page" className="contact-page">
       <div className="contact-container">
         <img
-          src="/images/headshot2.jpeg"
+          src="/images/headshot.jpeg"
           alt="Pranabh Joshi Headshot"
           className="contact-headshot"
         />

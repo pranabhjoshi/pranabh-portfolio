@@ -1,15 +1,18 @@
+
+
 /* Make entire section + parent share one tone */
 body,
 #root,
 main,
-.contact-page,
+#contact-page,
 #contact {
-  background-color: #eaeaea;
+  background-color: #F7F3EE;
 }
 
 /* Contact layout */
-.contact-page {
-  padding: 3rem 1rem;
+#contact-page {
+  height: 8vh;
+  padding: 9rem 1rem;
   margin: 0;
   box-shadow: none;
   border-radius: 0;
@@ -33,6 +36,7 @@ main,
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border: 3px solid black;
 }
 
 .contact-text {

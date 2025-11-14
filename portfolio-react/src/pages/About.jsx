@@ -5,8 +5,8 @@ export default function About() {
     <section className="about-page">
       <div className="about-container">
         <img
-          src="/images/headshot.jpeg"
-          alt="Pranabh Joshi Headshot"
+          src="/images/about_pic.JPG"
+          alt="Pranabh Joshi at UW Gameday"
           className="about-headshot"
         />
         <div className="about-text">
@@ -18,8 +18,8 @@ export default function About() {
             information more accessible and engaging.
           </p>
           <p>
-            Whether I’m designing civic tech tools, researching AI governance,
-            or coding creative prototypes, I’m driven by curiosity and impact.
+            Whether I’m designing a mobile-based product in Figma or researching how the AI innovation race is reshaping foreign policy, 
+            I’m driven by curiosity and impact.
             This portfolio brings together my academic work, design projects,
             and a few passion ideas that keep me learning.
           </p>
