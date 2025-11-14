@@ -11,7 +11,7 @@ export default function App() {
     <>      
       {/* MAIN Div */}
       <main> 
-        
+
         {/* Hero Section */}
         <section id="hero" className="hero">
           <div className="hero-left">
@@ -19,17 +19,17 @@ export default function App() {
             <p className="tagline">Joshi</p>
 
             <p className="aspiration">
-              <span className="highlight-role">Product Designer</span> & <span className="highlight-role">Political Scientist</span>
+              Aspiring<span className="highlight-role"> Product Designer</span>
             </p>
 
-            <p className="brand-statement"><em>Design shapes our world, Politics defines it</em></p>
+            <p className="brand-statement"><em>Design Systems, Critical Thinking</em></p>
 
             <a href="/projects" className="view-work">
             <strong>View my work -{">"}</strong>
             </a>
           </div> 
 
-          <div className="hero-left">
+          <div className="hero-right">
             <img 
               src="/images/headshot2.jpeg" 
               alt="Pranabh Joshi" 

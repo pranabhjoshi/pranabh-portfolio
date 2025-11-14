@@ -1,6 +1,3 @@
-import { Link } from "react-router-dom";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
 import "./ProjectPage.css";
 
 import resources from "../../assets/actup/resources.png";
@@ -9,7 +6,6 @@ export default function ActUp() {
   return (
     <div className="project-page">
       <header className="project-header">
-        <Link to="/projects" className="back-link">← Back to Projects</Link>
         <h1>ActUp</h1>
         <p className="subtitle">
           A civic-tech platform that makes local volunteering more social,
@@ -124,11 +120,19 @@ export default function ActUp() {
             challenges and gamified impact metrics.
           </p>
         </div>
+
+        <div className="process-step">
+          <h3>Teamwork</h3>
+          <p>
+            ActUp was built collaboratively as part of the UW Information School's Info 340, <strong>Front-End Development,</strong> course. 
+            Our team shared React components, styled together in weekly build sessions, and reviewed 
+            each other’s code through pull requests. Working as a group helped keep the UI consistent 
+            and made the final product feel more polished and cohesive.
+          </p>
+        </div>
+
       </section>
 
-      <footer className="project-header">
-        <Link to="/projects" className="back-link bottom">← Back to Projects</Link>
-      </footer>
     </div>
   );
 }

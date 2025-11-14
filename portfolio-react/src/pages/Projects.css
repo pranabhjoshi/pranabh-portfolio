@@ -1,0 +1,134 @@
+/* Projects section  */
+#projects, #writing {
+    margin-top: 1rem;
+    justify-content: center; 
+    background-color: var(--color-bg);
+}
+
+/* Writing shares the same layout as Projects via shared classes above */
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+
+}  
+
+.project-card {
+  text-decoration: none;
+  background: var(--color-white);
+  color: var(--color-text);
+  flex: 1 1 280px;
+  max-width: 350px;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.project-card h3 {
+  color: var(--color-text);
+  font-size: 1.4rem;
+  margin: 0 0 0.5rem 0;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-secondary);
+}
+
+.project-card p {
+  color: var(--color-text);
+  margin: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-color: var(--color-tertiary);
+}
+
+.project-card:hover h3 {
+  color: var(--color-secondary);
+}
+
+
+/* Back link styles  */
+.back-link {
+  display: inline-block;
+  margin: 1rem 0 2rem;
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.back-link:hover {
+  color: var(--color-primary);
+  background-color: var(--color-white);
+} 
+
+.projects-carousel-section {
+  height: 50%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;     /* 👈 isolate vertical flow */
+  justify-content: center;    /* vertical center */
+  align-items: center;        /* horizontal center */
+
+  overflow: hidden;           /* prevents off-screen shifts */
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.projects-carousel-section .react-multi-carousel-list {
+  width: 100%;
+  max-width: 1100px;   /* optional but highly stabilizing */
+  height: auto;        /* let contents determine height */
+  margin: 0 auto;
+  flex: 0 0 auto;      /* DO NOT stretch vertically */
+  align-items: center; 
+  gap: 20rem;
+}
+
+.projects-carousel-section .react-multi-carousel-track {
+  align-items: center;
+  display: flex;
+  gap: 2rem;   /* THIS is where spacing actually happens */
+}
+
+/* Shared section title styling */
+.section-title {
+  color: var(--color-text);
+  font-size: 3rem; 
+  opacity: 80%;
+  text-align: center;
+  font-weight: 1000;
+}
+
+.carousel-container {
+  padding: 0;
+}
+
+.project-tag {
+  background: var(--color-tertiary);
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+

@@ -12,14 +12,16 @@ export default function About() {
         <div className="about-text">
           <h1>About Me</h1>
           <p>
-            Hi! I’m <strong>Pranabh Joshi</strong> — a designer, developer, and
-            political science student at the University of Washington. I love
+            Hi! I’m <strong>Pranabh Joshi</strong> — an Informatics and 
+            Political Science student at the University of Washington. I love
             building projects that bridge technology, policy, and design to make
-            information more accessible and engaging.
+            information more accessible and engaging. My background in political science 
+            sharpens my ability to analyze complex problems, communicate clearly, and approach 
+            design challenges with a critical and empathetic mindset.
           </p>
           <p>
-            Whether I’m designing a mobile-based product in Figma or researching how the AI innovation race is reshaping foreign policy, 
-            I’m driven by curiosity and impact.
+            Whether I’m designing a new social media project in Figma or researching how the AI innovation race is reshaping 
+            our foreign policy, I’m driven by curiosity and a desire to make a positive impact.
             This portfolio brings together my academic work, design projects,
             and a few passion ideas that keep me learning.
           </p>

@@ -5,7 +5,6 @@ export default function Ginger() {
   return (
     <div className="project-page">
       <header className="project-header">
-        <Link to="/projects" className="back-link">← Back to Projects</Link>
         <h1>Ginger</h1>
         <p className="subtitle">
           A concept app exploring how we can make cooking as social and trackable as fitness.
@@ -70,9 +69,6 @@ export default function Ginger() {
         </div>
       </section>
 
-      <footer className="project-header">
-        <Link to="/projects" className="back-link bottom">← Back to Projects</Link>
-      </footer>
     </div>
   );
 }

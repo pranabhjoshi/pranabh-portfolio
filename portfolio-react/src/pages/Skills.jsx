@@ -1,7 +1,9 @@
+import "./Skills.css";
+
 function Skills() {
     return (
         <main> 
-            hello
+            <p className="soon">COMING SOON!</p>
         </main>
     )
 }

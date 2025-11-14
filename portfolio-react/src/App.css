@@ -55,7 +55,6 @@ nav {
   margin: 0 1rem;
   text-decoration: none;       /* remove default underline */
   font-weight: 500;
-  padding-bottom: 3px;         /* space for the underline */
 }
 
 .nav-link.active {
@@ -121,8 +120,13 @@ nav {
   color: var(--color-text);
 }
 
+
 .hero-left {
-  flex: 1; 
+  flex: 1;
+  opacity: 0;                     /* start hidden */
+  transform: translateX(-60px);   /* slide from left */
+  animation: slideInLeft 0.8s ease-out forwards;
+  animation-delay: 0.2s;
 }
 
 .hero-right {
@@ -130,11 +134,36 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 5rem 5rem 0;
+
+  opacity: 0;                      /* start hidden */
+  transform: translateX(60px);     /* slide from right */
+  animation: slideInRight 0.8s ease-out forwards;
+  animation-delay: 0.35s;          /* slightly later than left */
 }
 
-.hero-left, .hero-right {
+/* keep your shared padding */
+.hero-left,
+.hero-right {
   padding: 5rem 4rem;
 }
+
+/* --- animations --- */
+
+@keyframes slideInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 
 .hero-photo {
   width: 100%;
@@ -205,6 +234,8 @@ nav {
   text-align: left; 
   color: var(--color-secondary);
 }
+
+
 
 .brand-statement {
   text-align: left; 
@@ -343,84 +374,6 @@ h2 {
   padding-bottom: 0.3rem;
 }
  */
-/* Projects section  */
-#projects {
-    margin-top: 1rem;
-}
-
-.project-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-  padding-bottom: 1rem;
-}  
-
-.project-card {
-  text-decoration: none;
-  background: var(--color-white);
-  color: var(--color-text);
-  flex: 1 1 280px;
-  max-width: 350px;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border: 1px solid var(--color-white);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 1rem;
-}
-
-.project-card h3 {
-  color: var(--color-text);
-  font-size: 1.4rem;
-  margin: 0 0 0.5rem 0;
-  text-align: center;
-  width: 100%;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--color-secondary);
-}
-
-.project-card p {
-  color: var(--color-text);
-  margin: 0;
-  flex-grow: 1;
-  display: flex;
-  align-items: center;
-}
-
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  border-color: var(--color-tertiary);
-}
-
-.project-card:hover h3 {
-  color: var(--color-secondary);
-}
-
-
-/* Back link styles  */
-.back-link {
-  display: inline-block;
-  margin: 1rem 0 2rem;
-  color: var(--color-secondary);
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.2s ease;
-  align-self: flex-start;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-}
-
-.back-link:hover {
-  color: var(--color-primary);
-  background-color: var(--color-white);
-} 
-
 
 
 /* Contact Section Container */

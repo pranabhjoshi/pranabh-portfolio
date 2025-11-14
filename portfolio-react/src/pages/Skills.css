@@ -1,0 +1,8 @@
+.soon {
+  font-weight: 1000;
+  font-size: 12rem;
+  color: red; 
+  align-items: center; /* Vertically centers content */
+  justify-content: center; /* Horizontally centers content (optional) */
+
+}
